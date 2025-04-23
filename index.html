@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonisx Production - Interactive</title>
+    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <div class="logo">
+                <a href="#inicio">
+                     <img src="logo en blanco.png" alt="Sonisx Production Logo" class="logo-img dark-logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#presentacion">Presentación</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#paquetes">Paquetes</a></li>
+                    <li><a href="#equipo">Equipo</a></li>
+                    <li><a href="#whatsapp">WhatsApp</a></li>
+                </ul>
+                <div class="burger" id="burger-menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div id="hero-3d-background"></div>
+        <div class="hero-overlay">
+            <h1 class="hero-title">Sonisx Production</h1>
+            <p class="hero-subtitle">Creatividad en VFX y Diseño Gráfico</p>
+            <a href="#portafolio" class="cta-button">Ver Portafolio</a>
+        </div>
+    </section>
+
+    <section id="presentacion" class="presentation content-section">
+        <div class="container presentation-content">
+            <h2>Presentación</h2>
+            <p class="section-description">Somos Sonisx Production, un equipo apasionado por la creación visual. Combinamos arte y tecnología para dar vida a tus ideas con efectos visuales impactantes y diseño gráfico innovador.</p>
+            <video class="presentation-video" controls poster="placeholder_presentacion.jpg" preload="metadata">
+                <source src="logo animado.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+        </div>
+    </section>
+
+    <section id="servicios" class="services content-section">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="services-container">
+                 <div class="service-card"> <i class="fas fa-magic service-icon"></i> <h3>VFX y Postproducción</h3> <p>Efectos visuales, composición, motion graphics y corrección de color.</p> </div>
+                 <div class="service-card"> <i class="fas fa-palette service-icon"></i> <h3>Diseño Gráfico</h3> <p>Identidad visual, branding, material publicitario, diseño web.</p> </div>
+                 <div class="service-card"> <i class="fas fa-film service-icon"></i> <h3>Producción Audiovisual</h3> <p>Desde la idea hasta la entrega final de videos.</p> </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="paquetes" class="services content-section" style="background-color: var(--color-tertiary);">
+        <div class="container">
+            <h2>Paquetes y Precios</h2>
+            <p class="section-description">Ofrecemos soluciones adaptadas a tus necesidades. Consulta nuestros paquetes o contáctanos.</p>
+            <div class="services-container">
+                 <div class="service-card"> <i class="fas fa-box-open service-icon"></i> <h3>Paquete Básico</h3> <p>Ideal para pequeños proyectos y startups.</p> <h4 class="glowing-text">Desde $1.5000.000</h4> </div>
+                 <div class="service-card"> <i class="fas fa-star service-icon"></i> <h3>Paquete Pro</h3> <p>Solución completa para empresas consolidadas.</p> <h4 class="glowing-text">2.5000.000</h4> </div>
+                 <div class="service-card"> <i class="fas fa-comments service-icon"></i> <h3>Personalizado</h3> <p>Nos adaptamos a tus requerimientos específicos.</p> <a href="#whatsapp" class="cta-button glowing-button">Consultar</a> </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portafolio" class="portfolio content-section">
+        <div class="container">
+            <h2>Portafolio Destacado</h2>
+            <p class="section-description">Explora algunos de nuestros proyectos más recientes.</p>
+            <div class="video-grid">
+                <div class="video-item" data-video-id="yOL-GasZBpM"> <img src="a.png" alt="Miniatura Proyecto 1" class="video-thumbnail"> </div>
+                <div class="video-item" data-video-id="oPAz46zT3_8"> <img src="a.png" alt="Miniatura Proyecto 2" class="video-thumbnail"> </div>
+                <div class="video-item" data-video-id="eU3uQEOY37c"> <img src="a.png" alt="Miniatura Proyecto 3" class="video-thumbnail"> </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="video-modal" id="video-modal">
+        <div class="video-modal-content">
+            <button class="close-button" id="close-modal-button" aria-label="Cerrar">×</button>
+            <div id="video-player-container"></div>
+        </div>
+    </div>
+
+    <section id="equipo" class="equipo content-section">
+        <div class="container">
+            <h2>Nuestro Equipo</h2>
+            <div class="team-grid">
+                 <div class="team-member"> <img src="ñop.png" alt="Foto Alex Andrade" class="team-photo"> <h3>Alex Andrade</h3> <p class="glowing-text">Especialista en VFX, Motion Graphics e Inteligencia Artificial</p> </div>
+                <div class="team-member"> <img src="a3.jpeg" alt="Foto Juanjose Chilito" class="team-photo"> <h3>juanjose Chilito</h3> <p class="glowing-text"> Diseñador Gráfico | Director de Arte & Fotografíal</p> </div>
+                <div class="team-member"> <img src="lau.png" alt="Foto Laura Ante" class="team-photo"> <h3>Laura Ante</h3> <p class="glowing-text">Ingeniera Multimedia | Especialista en Narrativas Transmedia</p> </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="whatsapp" class="whatsapp-section content-section">
+        <div class="container">
+            <h2>Contacta con Nosotros</h2>
+            <p>¿Tienes un proyecto en mente? Hablemos.</p>
+             <a href="https://w.app/sonisxproduction" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i>
+                <span>Chatear por WhatsApp</span>
+            </a>
+            </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                <a href="#" target="_blank" aria-label="Vimeo"><i class="fab fa-vimeo-v"></i></a>
+                <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>© <span id="current-year"></span> Sonisx Production. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
